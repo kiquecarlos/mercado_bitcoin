@@ -103,6 +103,12 @@ pipenv run prod_job
 
 ## Documentação API
 
+Exemplos de requisição
+
+[http://0.0.0.0:8000/api/mms/BRLBTC/?from=1614699701&range=20&to=1615206400](http://0.0.0.0:8000/api/mms/BRLBTC/?from=1614699701&range=20&to=1615206400)
+
+[http://0.0.0.0:8000/api/mms/BRLETH?from=1614699701&range=20&to=1615206400](http://0.0.0.0:8000/api/mms/BRLETH?from=1614699701&range=20&to=1615206400)
+
 Documentação Api foi configurado com Swagger
 links para documentação
 
