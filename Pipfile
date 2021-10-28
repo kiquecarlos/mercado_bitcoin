@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+dev_back = "bash -c 'DEBUG=True python manage.py runserver 0.0.0.0:8000'"
+prod_back = "bash -c 'DEBUG=False python manage.py runserver 0.0.0.0:8000'"
+
+prod_job = "bash -c 'python manage.py shell < job/__init__.py'"
+dev_job = "bash -c 'python manage.py shell < job/__init__.py'"
+
+first_time = "bash -c 'python manage.py makemigrations && python manage.py migrate && python manage.py createsuperuser && python manage.py shell < scripts/first_time.py'"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+requests = "*"
+tqdm = "*"
+cloudscraper = "*"
+drf-yasg = "*"
+drf-spectacular = "*"
+drf-api-logger = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
